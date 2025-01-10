@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="light_purple">#f4f6f9</color>
+    <color name="semi_purple">#cfcfeb</color>
+    <color name="purple">#6335e1</color>
+    <color name="textColor">#193566</color>
+    <color name="green">#3C603E</color>
+    <color name="on_green">#37DD40</color>
+    <color name="off_red">#E81717</color>
+    <color name="neumorph_lightColor">#FFFFFF</color>
+    <color name="light_Background">#ecf0f3</color>
+    <color name="teal_200">#8E8E8E</color>
+
+
+</resources>

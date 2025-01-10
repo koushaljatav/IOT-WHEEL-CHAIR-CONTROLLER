@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ecf0f3"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <!-- Connect Button -->
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/on_green"
+        android:gravity="center"
+        android:padding="25dp"
+        style="@style/Widget.Neumorph.ImageButton"
+        android:text="CONNECT"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:neumorph_shapeType="flat" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal">
+
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distance"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Distance: N/A">
+
+    </soup.neumorphism.NeumorphTextView>
+
+</LinearLayout>
+
+
+
+    <!-- Forward Button -->
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/btnForward"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/forward"
+        style="@style/Widget.Neumorph.ImageButton"
+        android:scaleType="centerInside"
+        app:neumorph_shapeType="flat" />
+
+    <!-- Middle Row (Left, TextView, Right Buttons) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Left Button -->
+
+        <!-- TextView -->
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/btnLeft"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitXY"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:src="@drawable/left"
+            app:neumorph_shapeType="flat" />
+
+        <!--            app:neumorph_cornerRadius="8dp"-->
+
+        <!--app:neumorph_lightColor="#FFFFFF"-->
+        <!--            app:neumorph_darkColor="#D1D9E6"-->
+<!--              app:neumorph_shadowColor="#AEB8C9"-->
+<!--        -->
+                <!-- Right Button -->
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/btnBackward"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/back_move"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:scaleType="centerInside"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/btnRight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="centerInside"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:src="@drawable/right"
+            app:neumorph_shapeType="flat" />
+
+    </LinearLayout>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/immediateStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/on_green"
+        style="@style/Widget.Neumorph.ImageButton"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textSize="18dp"
+        android:text="Emergency STOP"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:neumorph_shapeType="flat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="Speed Modes"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/speed1"
+                android:text="1"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/right"
+                app:neumorph_shapeType="flat" />
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/speed2"
+                android:text="2"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/right"
+                app:neumorph_shapeType="flat" />
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/speed3"
+                android:text="3"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/right"
+                app:neumorph_shapeType="flat" />
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/speed4"
+                android:text="4"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/right"
+                app:neumorph_shapeType="flat" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
